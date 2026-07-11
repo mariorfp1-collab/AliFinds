@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script async custom-element="amp-auto-ads"
-        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
-</script>  
-<meta name="google-adsense-account" content="ca-pub-5829768600114071">  
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
 <meta name="description" content="AliFinds - Los mejores productos de AliExpress con descuentos increibles. Tecnologia, hogar, belleza, cocina y mas. Precios actualizados diariamente." />
@@ -160,7 +156,8 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
 .ad-sq{width:100%;min-height:250px}
 
 /* LAYOUT */
-.main-wrap{max-width:1280px;margin:0 auto;padding:2rem 1.5rem;display:grid;grid-template-columns:1fr 280px;gap:2rem;align-items:start}
+/*RESP*/.main-wrap>*{min-width:0}.prod-grid{min-width:0}.product-card,.product-card *{max-width:100%}.product-card img{max-width:100%;height:auto;display:block}
+.main-wrap{max-width:1280px;margin:0 auto;padding:2rem 1.5rem;display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:2rem;align-items:start}
 
 /* SECTION */
 .sec-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.3rem}
@@ -369,7 +366,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
   .header-main{padding:.7rem 1rem;gap:.7rem}
   .h-actions{display:none}
   .hero{padding:2.2rem 1rem 3rem}
-  .prod-grid{grid-template-columns:repeat(2,1fr);gap:.8rem}
+  .prod-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem}
   .main-wrap{padding:1.2rem 1rem}
   .sidebar{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:1.2rem}
@@ -397,7 +394,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
   .sec-title{font-size:1.1rem}
 }
 @media(max-width:360px){
-  .prod-grid{grid-template-columns:1fr}
+  .prod-grid{grid-template-columns:minmax(0,1fr)}
   .logo-text{font-size:1.2rem}
   .search-wrap{display:none}
 }
@@ -1182,8 +1179,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 </script>
-<amp-auto-ads type="adsense"
-        data-ad-client="ca-pub-5829768600114071">
-</amp-auto-ads>  
 </body>
 </html>
