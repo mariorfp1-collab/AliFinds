@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<script src="https://quge5.com/88/tag.min.js" data-zone="258618" async data-cfasync="false"></script> 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover" />
 <meta name="description" content="AliFinds - Los mejores productos de AliExpress con descuentos increibles. Tecnologia, hogar, belleza, cocina y mas. Precios actualizados diariamente." />
@@ -16,22 +15,28 @@
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="AliFinds" />
-<meta property="og:title" content="AliFinds - Mejores Ofertas AliExpress España" />
+<meta property="og:title" content="AliFinds - Mejores Ofertas AliExpress Espana" />
 <meta property="og:description" content="Los mejores productos de AliExpress con descuentos reales. Seleccion actualizada diariamente." />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="AliFinds" />
 <meta property="og:locale" content="es_ES" />
+<meta property="og:image" content="/AliFinds-og.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="AliFinds - Mejores Ofertas AliExpress España" />
+<meta name="twitter:title" content="AliFinds - Mejores Ofertas AliExpress Espana" />
 <meta name="twitter:description" content="Los mejores productos de AliExpress con descuentos reales, actualizados diariamente." />
-<link rel="canonical" href="." />
+<meta name="twitter:image" content="/AliFinds-og.jpg" />
+<link rel="canonical" href="/" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/manifest.webmanifest" />
 <link rel="preconnect" href="https://ae-pic-a1.aliexpress-media.com" crossorigin />
 <link rel="dns-prefetch" href="https://ae-pic-a1.aliexpress-media.com" />
-<title>AliFinds | Mejores Ofertas AliExpress España - Actualizado Hoy</title>
+<title>AliFinds | Mejores Ofertas AliExpress Espana - Actualizado Hoy</title>
 
 <script type="application/ld+json">
 
-{"@context":"https://schema.org","@type":"WebSite","name":"AliFinds","url":"https://ali-finds-sshh.vercel.app/","description":"Los mejores productos de AliExpress con descuentos reales actualizados diariamente","potentialAction":{"@type":"SearchAction","target":"https://alifinds.blogspot.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"AliFinds","url":"https://alifinds.blogspot.com","description":"Los mejores productos de AliExpress con descuentos reales actualizados diariamente","potentialAction":{"@type":"SearchAction","target":"https://alifinds.blogspot.com/search?q={search_term_string}","query-input":"required name=search_term_string"}}
 
 </script>
 <style>
@@ -203,7 +208,17 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
 .csb-fb{background:#1877F2}.csb-x{background:#000}.csb-wa{background:#25D366}.csb-ig{background:linear-gradient(135deg,#833AB4,#FD1D1D)}.csb-pin{background:#E60023}
 
 /* SIDEBAR */
-.sidebar{display:flex;flex-direction:column;gap:1.4rem}
+.sidebar{display:flex;flex-direction:column;gap:1.4rem;min-width:0}
+.sidebar>*{min-width:0;max-width:100%}
+/* @section: categorias-movil */
+.category-panel{min-width:0;width:100%;max-width:100%}
+.category-list{list-style:none;display:flex;flex-direction:column;gap:.4rem;min-width:0}
+.category-list li{min-width:0}
+.category-button{width:100%;max-width:100%;display:grid;grid-template-columns:1.5rem minmax(0,1fr) 1.25rem;align-items:center;column-gap:.55rem;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;line-height:1.35;color:var(--text);transition:all .2s;white-space:normal;overflow:visible}
+.category-button:hover,.category-button:focus-visible{background:var(--bg2);color:var(--green-d);outline:none}
+.category-icon,.category-arrow{display:inline-flex;align-items:center;justify-content:center;visibility:visible;opacity:1;overflow:visible;color:inherit}
+.category-name{display:block;min-width:0;visibility:visible;opacity:1;color:inherit;white-space:normal;overflow:visible;text-overflow:clip}
+.category-arrow{justify-content:flex-end}
 .sw{background:#fff;border-radius:var(--r2);padding:1.2rem;box-shadow:var(--sh1);border:1.5px solid var(--border)}
 .sw-title{font-size:.95rem;font-weight:900;margin-bottom:1rem;padding-bottom:.6rem;border-bottom:2px solid transparent;border-image:linear-gradient(90deg,var(--green),var(--gold)) 1;display:flex;align-items:center;gap:.4rem}
 .tr-item{display:flex;gap:.75rem;padding:.65rem 0;border-bottom:1px solid var(--border);align-items:center;transition:var(--tr);cursor:pointer}
@@ -374,9 +389,12 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
   .testi-stats{gap:1.5rem}
   .faq-grid{grid-template-columns:1fr}
   .hero-stats{display:none}
-  .sidebar .sw:nth-of-type(3) ul{gap:.65rem!important}
-  .sidebar .sw:nth-of-type(3) button{display:grid!important;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;justify-content:initial!important;column-gap:.55rem;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;min-height:44px;line-height:1.35;color:var(--text)!important}
-  .sidebar .sw:nth-of-type(3) button span{display:inline-flex!important;align-items:center;justify-content:flex-end;visibility:visible!important;opacity:1!important;min-width:1.25rem;overflow:visible!important;color:inherit}
+  .sidebar{min-width:0}
+  .sidebar>*{min-width:0;width:100%;max-width:100%}
+  .category-panel{min-width:0;overflow:visible}
+  .category-list{gap:.65rem}
+  .category-button{grid-template-columns:1.5rem minmax(0,1fr) 1.25rem;min-height:44px;padding:.55rem .75rem}
+  .category-name{white-space:normal;overflow:visible;text-overflow:clip}
 }
 @media(max-width:600px){
   .tcard{min-width:calc(100vw - 3rem)}
@@ -409,7 +427,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
 <!-- HEADER -->
 <header class="site-header" role="banner">
   <div class="header-top">
-    &#x1F331; Los mejores productos AliExpress con descuentos reales &#x00B7; Envio desde España disponible &#x00B7; Actualizado hoy
+    &#x1F331; Los mejores productos AliExpress con descuentos reales &#x00B7; Envio desde Espana disponible &#x00B7; Actualizado hoy
   </div>
   <div class="header-main">
     <a href="/" class="logo" aria-label="AliFinds inicio">
@@ -475,7 +493,7 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
       <span class="hero-tag">&#x1F4B0; Ahorro garantizado</span>
     </div>
     <div class="update-tag">&#x1F7E2; Actualizado hoy con productos reales de AliExpress</div>
-    <h1 id="hero-h1">Las mejores ofertas de<br /><span class="grad">AliExpress España</span></h1>
+    <h1 id="hero-h1">Las mejores ofertas de<br /><span class="grad">AliExpress Espana</span></h1>
     <p>46 productos seleccionados con descuentos de hasta el 74%. Precios reales, links directos, ahorro garantizado.</p>
     <div class="hero-btns">
       <a href="#productos" class="btn-main">&#x1F4B0; Ver ofertas ahora</a>
@@ -506,6 +524,11 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
     <div class="trust-item"><div class="trust-icon">&#x1F4B3;</div><span>Multiples formas de pago</span></div>
     <div class="trust-item"><div class="trust-icon">&#x2B50;</div><span>Productos verificados</span></div>
   </div>
+</div>
+
+<!-- AD TOP -->
+<div style="max-width:1280px;margin:1.5rem auto;padding:0 1.5rem;">
+  <div class="ad-slot ad-h" aria-label="Publicidad">&#x1F4E2; Google AdSense (728x90)</div>
 </div>
 
 <!-- MAIN -->
@@ -721,25 +744,35 @@ section{content-visibility:auto;contain-intrinsic-size:1px 800px}
       </form>
     </div>
 
-   <!-- SIDEBAR -->
+    <!-- AD MID -->
+    <div class="ad-slot ad-h" style="margin:1.5rem 0;" aria-label="Publicidad">&#x1F4E2; Google AdSense (728x90)</div>
+
+  </div>
+
+  <!-- SIDEBAR -->
   <aside class="sidebar" aria-label="Panel lateral">
     <div class="sw">
       <h3 class="sw-title">&#x1F3C6; Top AliExpress</h3>
       <div id="topList"></div>
     </div>
-   
-    <div class="sw">
+    <div class="sw" style="padding:.5rem;">
+      <div class="ad-slot ad-sq" aria-label="Publicidad">&#x1F4E2; AdSense (300x250)</div>
+    </div>
+    <!-- @section: categorias-movil -->
+    <div class="sw category-panel">
       <h3 class="sw-title">&#x1F4C2; Categorias</h3>
-      <ul style="list-style:none;display:flex;flex-direction:column;gap:.4rem;">
-        <li><button onclick="filterCat('cocina')" style="width:100%;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;transition:all .2s;display:flex;justify-content:space-between;">&#x1F373; Cocina <span>&#x2192;</span></button></li>
-        <li><button onclick="filterCat('salud')" style="width:100%;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;transition:all .2s;display:flex;justify-content:space-between;">&#x1FA77; Salud Bucal <span>&#x2192;</span></button></li>
-        <li><button onclick="filterCat('limpieza')" style="width:100%;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;transition:all .2s;display:flex;justify-content:space-between;">&#x1F9F9; Limpieza <span>&#x2192;</span></button></li>
-        <li><button onclick="filterCat('hogar')" style="width:100%;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;transition:all .2s;display:flex;justify-content:space-between;">&#x1F3E0; Hogar <span>&#x2192;</span></button></li>
-        <li><button onclick="filterCat('belleza')" style="width:100%;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;transition:all .2s;display:flex;justify-content:space-between;">&#x1F486; Belleza <span>&#x2192;</span></button></li>
-        <li><button onclick="filterCat('auto')" style="width:100%;text-align:left;padding:.5rem .75rem;border-radius:10px;font-size:.83rem;font-weight:600;transition:all .2s;display:flex;justify-content:space-between;">&#x1F697; Auto <span>&#x2192;</span></button></li>
+      <ul class="category-list" aria-label="Categorias de productos">
+        <li><button class="category-button" type="button" onclick="filterCat('cocina')"><span class="category-icon" aria-hidden="true">&#x1F373;</span><span class="category-name">Cocina</span><span class="category-arrow" aria-hidden="true">&#x2192;</span></button></li>
+        <li><button class="category-button" type="button" onclick="filterCat('salud')"><span class="category-icon" aria-hidden="true">&#x1FA77;</span><span class="category-name">Salud Bucal</span><span class="category-arrow" aria-hidden="true">&#x2192;</span></button></li>
+        <li><button class="category-button" type="button" onclick="filterCat('limpieza')"><span class="category-icon" aria-hidden="true">&#x1F9F9;</span><span class="category-name">Limpieza</span><span class="category-arrow" aria-hidden="true">&#x2192;</span></button></li>
+        <li><button class="category-button" type="button" onclick="filterCat('hogar')"><span class="category-icon" aria-hidden="true">&#x1F3E0;</span><span class="category-name">Hogar</span><span class="category-arrow" aria-hidden="true">&#x2192;</span></button></li>
+        <li><button class="category-button" type="button" onclick="filterCat('belleza')"><span class="category-icon" aria-hidden="true">&#x1F486;</span><span class="category-name">Belleza</span><span class="category-arrow" aria-hidden="true">&#x2192;</span></button></li>
+        <li><button class="category-button" type="button" onclick="filterCat('auto')"><span class="category-icon" aria-hidden="true">&#x1F697;</span><span class="category-name">Auto</span><span class="category-arrow" aria-hidden="true">&#x2192;</span></button></li>
       </ul>
     </div>
-    
+    <div class="sw" style="padding:.5rem;">
+      <div class="ad-slot ad-sq" aria-label="Publicidad">&#x1F4E2; AdSense (300x250)</div>
+    </div>
   </aside>
 </main>
 
